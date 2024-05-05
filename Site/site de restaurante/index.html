@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Quando eu começei a fazer, quem sabia oque estava fazendo era eu e Deus, agora é só Deus, favor desistir
+    Obrigado pela Compreensão!
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--Fonte poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <title>CW Bistrô</title>
+</head>
+<body>
+    <header style="background-color: #fff; opacity: 0.8; justify-content: space-between; width: 100%; position: fixed; display: flex; z-index: 1000; box-shadow: 0px 5px 10px 0px #aaa">
+ 
+      
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="font-size: 16px; font-family: poppins;">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            <strong style="margin-right: 900px; color: black;">
+              CW Bistrô
+            </strong>
+          </span>
+          <ul class="navbar-nav" style="font-size: 16px; cursor: pointer;">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#inicio" style="color: rgb(78, 33, 3);">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#sobre" style="color: rgb(78, 33, 3);">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#categoria" style="color: rgb(78, 33, 3);">Categoria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#menu" style="color: rgb(78, 33, 3);">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#avaliacoes" style="color: rgb(78, 33, 3);">Avaliações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#contato" style="color: rgb(78, 33, 3);">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      
+    </header>
+
+    <main>
+
+
+      <section id="inicio">
+        <div style="display: flex;">
+          <img src="Img/Foto_de_comida_no_inicio.avif" alt="" width="1600px" height="740px" style="position: relative;">
+          <h1 class="row justify-content-center" style="font-size: 60px; color: whitesmoke; position: absolute; top: 260px; right: 410px; text-shadow: 3px 3px 3px black;"><strong>COMA COMIDA SAUDÁVEL</strong></h1>
+          <p class="row justify-content-center" style="font-size: 30px; color: whitesmoke; position: absolute; top: 340px; right: 540px; text-shadow: 3px 3px 3px black;"><strong>Comida saudável é bom para a saúde</strong></p>
+          <div class="row justify-content-center" style=" position: absolute; top: 410px; right: 760px;">
+            <a href="#menu"><button type="button" class="btn btn-light">Menu</button></a>   
+          </div>
+        </div>
+      </section>
+
+
+      <section id="sobre" style="padding-top: 80px; padding-bottom: 50px; background-color: #ECEBF0;">
+        <div class="container">
+          <div class="row">
+            <div class="col" style="padding-right: 300px; font-family: poppins;">
+              <h3 style="color: brown;">Sobre nós</h3>
+              <h1 style="font-size: 35px;"><strong>Venha Saborear o Sabor Saudável no Nosso Restaurante!</strong></h1>
+              <p style="font-size: 17px;">No coração da cidade, nosso restaurante oferece uma experiência gastronômica única, onde sabor e saúde se encontram. Com uma seleção cuidadosamente elaborada de pratos frescos e naturais, convidamos você a desfrutar de refeições deliciosas que nutrem o corpo e a alma. Dos coloridos bowls de vegetais aos suculentos pratos principais, cada mordida é uma celebração do bem-estar. Descubra o prazer de comer saudável em <br> nosso restaurante - o seu paladar e sua saúde agradecem!</p>
+            </div>
+            <div class="col" style="padding-top: 100px;">
+              <img src="Img/comida_saudavel_0.avif" alt="" height="350" width="450">
+            </div>
+          </div>
+        </div>  
+      </section>
+
+
+      <section id="categoria" style="font-family: poppins;">
+        <div class="texto_principal">
+          <p class="h1">Tipos de comida</p>
+        </div>
+
+        <div class="conteiner_geral" onmouseover="showText()" onmouseout="hideText()">
+          <div class="textoFruta">
+            <img src="Img/Fotos_de_frutas.avif" alt="" height="250" width="350">
+            <div class="frutasExtra" id="extra">
+              <h3>Frutas</h3>
+              <button type="button" class="btn btn-dark">
+                <a href="https://www.significados.com.br/frutas/">Ler mais...</a>
+              </button>
+            </div>
+          </div>
+          
+          <div class="textoVegetal">
+            <img src="Img/Vegetais.jpg" alt="" height="250" width="350">
+            <div class="vegetaisExtra" id="extra">
+              <h3>Vegetais</h3>
+              <button type="button" class="btn btn-dark">
+                <a href="https://www.significados.com.br/vegetais/#:~:text=Os%20vegetais%20s%C3%A3o%20um%20grupo,da%20alimenta%C3%A7%C3%A3o%20dos%20seres%20humanos.">Ler mais...</a>
+              </button>
+            </div>
+          </div>
+          
+          <div class="textoGrao">
+            <img  src="Img/Fotos_de_graos.webp" alt="" height="250" width="350">
+            <div class="graosExtra" id="extra">
+              <h3>Grãos</h3>
+              <button type="button" class="btn btn-dark">
+                <a href="https://alimentosprocessados.com.br/ingredientes-macroingredientes-graos.php">Ler mais...</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="menu">
+        <p class="h1" style="padding-bottom: 120px; padding-left: 700px; padding-top: 250px;">Menu</p>
+        <div style="padding-left: 75px; display: flex;">
+          <div style="display: flex;">
+            <img src="Img/Foto_comida_saudavel_5.jpg" alt="comida" class="rounded-circle" height="250" width="250">
+            <p style="margin-left: 20px; line-height: 1.8; font-family: poppins;"> <strong style="font-size: 25px;">Salada Tropical</strong> <br>
+              Explore uma explosão de sabores tropicais <br> com a nossa salada exclusiva, perfeita para <br> os amantes da culinária leve e refrescante. <br> Feita com uma mistura fresca de alface, <br> rúcula, espinafre, manga suculenta, abacaxi <br> refrescante, pimentão vermelho crocante, <br> pepino fresco e regada com o nosso delicioso <br> molho de maracujá artesanal.
+              Desfrute de <br> uma combinação única de doce e picante <br> que vai encantar o seu paladar e refrescar <br>o seu dia! Ideal como acompanhamento <br> para qualquer prato ou como uma opção <br> principal para uma refeição leve e saudável. <br>
+              <strong style="color: rgb(80, 51, 4);; font-size: 30px;">Preço: $15</strong></p>
+          </div>
+          <div style="display: flex;">
+              <img src="Img/Foto_comida_saudavel_6.jpg" alt="comida" class="rounded-circle" height="250" width="250" style="margin-left: 100px;">
+              <p style="margin-left: 20px; line-height: 1.8; font-family: poppins;"><strong style="font-size: 25px;">Salada de Frango</strong><br>
+                Explore a nossa seleção única <br> de saladas de frango, onde a <br> frescura e o sabor se encontram <br> para criar uma experiência gastronômica <br> inigualável!
+                Apresentamos a nossa <br> estrela: Salada de Frango Tropical! <br> Prepare-se para uma explosão de <br> sabores com uma mistura perfeita <br> de folhas verdes crocantes, suculento <br> frango grelhado, abacaxi refrescante, <br> manga doce, pimentão vermelho crocante <br> e um toque exótico de molho de maracujá <br> feito na hora.
+                Cada garfada é uma viagem <br> sensorial para os trópicos, onde cada <br> ingrediente é cuidadosamente selecionado <br> para garantir o máximo de frescura e sabor. <br> Uma experiência única para os amantes de <br> saladas e frango! <br>
+                <strong style="color: rgb(80, 51, 4); font-size: 30px;">Preço: $12</strong></p>
+          </div>
+        </div>
+        <div style="margin-top: 280px; padding-left: 75px; display: flex;">
+          <div style="display: flex;">
+            <img src="Img/Foto_comida_saudavel_7.jpg" alt="comida" class="rounded-circle" height="250" width="250">
+            <p style="margin-left: 20px; line-height: 1.8; font-family: poppins;"><strong style="font-size: 25px;">Peixe com salada</strong><br>
+              Mergulhe em uma experiência gastronômica <br> única com o nosso prato de Peixe Fresco <br> acompanhado de uma Salada fresca e <br> vibrante! Aqui, no nosso restaurante à <br> beira-mar, trazemos o melhor dos oceanos <br> diretamente para a sua mesa.
+              Delicie-se com <br> o sabor suculento e a textura delicada do <br> nosso peixe fresco, preparado com maestria <br> pelos nossos chefs especializados. <br> Complementando esta experiência, <br> apresentamos uma salada exuberante, repleta <br> de ingredientes frescos da estação, como alface <br> crocante, tomate suculento, pepino refrescante <br> e um toque especial de limão.
+              Cada garfada é <br> uma celebração dos sabores do mar e da terra, <br> harmonizados perfeitamente para uma <br> experiência gastronômica memorável. Ideal para <br> os amantes de frutos do mar e para aqueles que <br> buscam uma opção saudável e deliciosa. <br>
+              <strong style="color: rgb(80, 51, 4); font-size: 30px;">Preço: $20</strong></p>
+          </div>
+          <div style="display: flex;">
+            <img src="Img/Foto_comida_saudavel_8.jpg" alt="comida" class="rounded-circle" height="250" width="250" style="margin-left: 100px;">
+            <p style="margin-left: 20px; line-height: 1.8; font-family: poppins;"><strong style="font-size: 25px;">Salada de Grãos</strong><br>
+              Descubra uma nova maneira de se <br> deliciar com nossas Saladas de Grãos, <br> repletas de sabor e nutrientes para <br> uma refeição saudável e satisfatória. <br> Nossa Salada de Grãos é uma explosão <br> de cores e texturas, preparada com uma <br> seleção cuidadosa de grãos integrais <br> como quinoa, bulgur, trigo sarraceno e <br> lentilhas, combinados com uma variedade <br> de vegetais frescos da estação.
+              Cada <br> mordida é uma experiência de sabor única, <br> realçada pelo tempero delicado e pelos <br> toques de ervas frescas. Além disso, <br> oferecemos uma variedade de proteínas <br> adicionais, como frango grelhado, camarão <br> ou tofu, para tornar sua refeição ainda <br> mais substancial e satisfatória.
+              Desfrute <br> de uma opção de refeição nutritiva e <br> deliciosa que vai satisfazer seu paladar e <br> nutrir seu corpo. <br><strong style="color: rgb(80, 51, 4); font-size: 30px;">Preço: $12</strong></p>
+          </div>
+        </div>
+        <div style="margin-top: 280px; padding-left: 75px; display: flex;">
+          <div style="display: flex;">
+            <img src="Img/Foto_comida_saudavel_9.jpg" alt="comida" class="rounded-circle" height="250" width="250">
+            <p style="margin-left: 20px; line-height: 1.8; font-family: poppins;"><strong style="font-size: 25px;">Torta de Framboesa</strong><br>
+              Dê um mergulho no sabor irresistível <br> da nossa Torta de Framboesa, uma <br> verdadeira obra-prima da confeitaria! <br> Prepare-se para uma experiência <br> sensorial única, onde a doçura das <br> framboesas frescas se funde <br> harmoniosamente com a leveza da <br> massa crocante.
+              Cada mordida é <br> uma explosão de frescor e prazer, <br> com o sabor suculento das framboesas <br> dançando delicadamente em seu paladar. <br> Feita com ingredientes cuidadosamente <br> selecionados e uma pitada de amor, nossa <br> torta é a escolha perfeita para adoçar <br> qualquer momento especial.
+              Desfrute de <br> uma fatia desta delícia como sobremesa <br> depois de uma refeição memorável ou <br> como um mimo indulgente durante o <br> seu dia. No nosso restaurante, a qualidade <br> é a nossa prioridade, e cada pedaço de <br> torta é uma celebração do bom gosto e da <br> dedicação à arte da culinária. <br>
+              <strong style="color: rgb(80, 51, 4); font-size: 30px;">Preço: $8</strong></p>
+          </div>
+          <div style="display: flex;">
+            <img src="Img/Foto_comida_saudavel_10.jpg" alt="comida" class="rounded-circle" height="250" width="250" style="margin-left: 100px;">
+            <p style="margin-left: 20px; line-height: 1.8; font-family: poppins;"><strong style="font-size: 25px;">Sobremesa Gelada de Frutas</strong><br>
+              Dê um mergulho refrescante em uma <br> explosão de sabores tropicais com a <br> nossa sobremesa gelada de frutas frescas. <br> Preparamos cuidadosamente uma seleção <br> exuberante de frutas da estação, como <br> morangos suculentos, kiwis frescos, mangas <br> maduras e pedaços de abacaxi, tudo misturado <br> em uma base cremosa de iogurte natural.
+              Cada <br> colher é uma viagem sensorial para o paraíso, <br> com a doçura natural das frutas dançando em <br> harmonia com a cremosidade do iogurte. Seja <br> para encerrar uma refeição com um toque <br> refrescante ou simplesmente para satisfazer um <br> desejo por algo doce e saudável, nosso Paraíso <br> Gelado de Frutas é a escolha perfeita. <br>
+              <strong style="color: rgb(80, 51, 4); font-size: 30px;">Preço: $8</strong></p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="avaliacoes">
+        <h1 style="padding-bottom: 120px; padding-left: 375px; padding-top: 300px; font-family: poppins;">O que nossos Clientes Falam sobre nós:</h1>
+        <div>
+          <img src="Img/Foto_de_pessoas_1.jpg" alt="pessoa" class="rounded-circle" height="150" width="180" style="margin-left: 230px;">
+          <img src="Img/Foto_de_pessoas_3.jpg" alt="pessoa" class="rounded-circle" height="150" width="180" style="margin-left: 280px;">
+          <img src="Img/Foto_de_pessoas_2.jpg" alt="pessoa" class="rounded-circle" height="150" width="180" style="margin-left: 250px;">
+          <div style="display: flex; margin-top: 20px; font-family: poppins">
+            <h3 style="margin-left: 260px;">Jorge Lee</h3>
+            <h3 style="margin-left: 265px;">Amelia Gonçalves</h3>
+            <h3 style="margin-left: 200px;">João Lucas Silva</h3>
+          </div>
+          <div style="display: flex; color: #ff9529; font-size: 1.4rem; margin-top: 5px;">
+            <div class="star-rating" style="margin-left: 245px;">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="star-rating" style="margin-left: 310px;">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="star-rating" style="margin-left: 295px;">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+          <div style="display: flex; text-align: center; margin-top: 20px; font-size: 20px; font-family: poppins;">
+            <p style="margin-left: 150px;">Amei o restaurante, <br> a comida, e todo atendimento. <br> Espero sempre voltar neste lugar <br> maravilhoso!</p>
+            <p style="margin-left: 140px;">Comida maravilhosa e <br> atendimento maravilhoso. Volto <br> sempre que estou na <br> cidade.</p>
+            <p style="margin-left: 150px;">Excelente ambiente,<br> com variedade de comidas <br> deliciosas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" style="background-color: #ECEBF0; padding-bottom: 150px; font-family: poppins">
+        <h1 style="padding-left: 660px; padding-top: 200px; padding-bottom: 130px;">Contatos</h1>
+        <div style="display: flex;">  
+          <img src="Img/Foto_de_pessoas_4.jpg" alt="" style="margin-left: 145px; width: 500px; height: 400px;">
+          <div style="margin-left: 50px; margin-top: 5px;">
+            <form style="width: 690px;">
+              <div class="form-group">
+                <label for="exampleFormControlInput">Nome</label>
+                <br>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="nome" required placeholder="Escreva seu nome" style="width: 690px;">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Texto</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva seu texto" style="height: 125px;"></textarea>
+              </div>
+            </form>
+            <button type="button" class="btn btn-outline-dark" style="height: 50px; width: 200px;">Enviar</button>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer style="padding: 50px; text-align: center; background-color: rgb(80, 51, 4);">
+      <h3 style="color: #fff;">Projeto inspirado no site de restaurante da usuária do GitHub Claudineia Gonçalves</h3>
+    </footer>
+
+
+    </header>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
