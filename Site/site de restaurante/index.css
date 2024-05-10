@@ -1,121 +1,67 @@
-.texto_principal {
-    padding-left: 600px; padding-top: 190px;
+#categoria h2 {
+    padding-left: 600px; padding-top: 190px; padding-bottom: 150px;
 }
 
-.conteiner_geral {
+.food-container {
     display: flex;
-    padding-top: 100px
-}
-
-.textoFruta {
-    margin-left: 230px;
-    margin-right: 5px;
+    justify-content: space-between;
+  }
+  
+  .food-container img {
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .img-container {
+    margin: 0 1rem;
     position: relative;
-}
-
-.textoVegetal {
-    position: relative;
-}
-
-.textoGrao {
-    margin-left: 5px;
-    position: relative;
-}
-
-.frutasExtra {
-    opacity: 0;
+  }
+  
+  .img-content {
     position: absolute;
-    top: 50%; /* centraliza verticalmente */
-    left: 50%; /* centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* ajusta para centralizar completamente */
-    text-align: center; /* alinha o texto no centro */
-    text-decoration: none;
-    transition: opacity 0.3s ease; /* adiciona uma transição suave */
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
     z-index: 2;
-}
-
-
-.frutasExtra h3 {
-    color: brown
-}
-
-.frutasExtra a {
-    color: white;
-}
-
-.textoFruta::after {
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .img-content h3 {
+    color: #fff;
+    font-size: 2.2rem;
+  }
+  
+  .img-content a {
+    font-size: 1.2rem;
+  }
+  
+  .img-container::after {
     content: "";
     display: block;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.871);
     opacity: 0;
     z-index: 1;
-
+  
     transform: scaleY(0);
-    transition: all 0.3s ease-in-out;
-}
-
-.textoFruta:hover::after {
+    transform-origin: 100% 100%;
+    transition: all 0.3s
+  }
+  
+  .img-container:hover::after {
     opacity: 1;
     transform: scaleY(1);
-}
-
-.textoFruta:hover .frutasExtra {
+  }
+  
+  .img-container:hover .img-content {
     opacity: 1;
     top: 40%;
-}
-
-.vegetaisExtra {
-    opacity: 0;
-    position: absolute;
-    top: 50%; /* centraliza verticalmente */
-    left: 50%; /* centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* ajusta para centralizar completamente */
-    text-align: center; /* alinha o texto no centro */
-    text-decoration: none;
-    transition: opacity 0.3s ease; /* adiciona uma transição suave */
-    transition: opacity 0.3s ease; /* adiciona uma transição suave */
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo preto com 50% de transparência */
-}
-
-.vegetaisExtra h3 {
-    color: brown;
-}
-
-.vegetaisExtra a {
-    color: white;
-}
-
-.vegetaisExtra:hover {
-   opacity: 1;
-}
-
-.graosExtra {
-    opacity: 0;
-    position: absolute;
-    top: 50%; /* centraliza verticalmente */
-    left: 50%; /* centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* ajusta para centralizar completamente */
-    text-align: center; /* alinha o texto no centro */
-    text-decoration: none;
-    transition: opacity 0.3s ease; /* adiciona uma transição suave */
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo preto com 50% de transparência */
-}
-
-.graosExtra h3 {
-    color: brown;
-}
-
-.graosExtra a {
-    color: white;
-}
-
-.graosExtra:hover {
-    opacity: 1;
-}
-
-.textoGrao:not() {
-    margin-bottom: 3rem;
   }
